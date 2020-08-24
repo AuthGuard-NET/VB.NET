@@ -21,7 +21,7 @@ Guard.Initialize("PROGRAMSECRET", "VERSION", "VARIABLESECRET")
 * `GuardSettings.HWIDLock` : HWIDLock Enabled/Disabled
 
 ## Register
-```visualbasic
+```vb.net
 If Guard.Register(username, password, email, license) Then
     MessageBox.Show("You have successfully registered!", GuardSettings.ProgramName, MessageBoxButton.OK, MessageBoxImage.Information)
     ' Do code of what you want after successful register here!
