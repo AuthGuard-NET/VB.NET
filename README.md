@@ -8,8 +8,8 @@ First you'll need to get your `Secret Key`, your `App Version` and your `Variabl
 After you got the your `Secret Key`, your `App Version` and your `Variable Secret`, you can now Initialize AuthGuard and use all its features:
 
 ## Initialize
-```csharp
-//This connects your file to the AuthGuard.net API
+```visualbasic
+' This connects your file to the AuthGuard.net API
 Guard.Initialize("PROGRAMSECRET", "VERSION", "VARIABLESECRET")
 ```
 > After a successful initialization, the server will send back the following information on your application based on the settings you have picked
@@ -24,7 +24,7 @@ Guard.Initialize("PROGRAMSECRET", "VERSION", "VARIABLESECRET")
 ```visualbasic
 If Guard.Register(username, password, email, license) Then
     MessageBox.Show("You have successfully registered!", GuardSettings.ProgramName, MessageBoxButton.OK, MessageBoxImage.Information)
-    // Do code of what you want after successful register here!
+    ' Do code of what you want after successful register here!
 End If
 ```
 
@@ -32,7 +32,7 @@ End If
 ```visualbasic
 If Guard.Login(username, password) Then
     MessageBox.Show("You have successfully logged in!", UserInfo.Username, MessageBoxButton.OK, MessageBoxImage.Information)
-    // Success login stuff goes here
+    ' Success login stuff goes here
 End If
 ```
 > After a successful login, the server will send back the following information on your user
@@ -48,6 +48,6 @@ End If
 ```visualbasic
 If Guard.RedeemToken(username, password, token) Then
     MessageBox.Show("You have successfully extended your subscription!", GuardSettings.ProgramName, MessageBoxButton.OK, MessageBoxImage.Information)
-    //Do code of what you want after successful extend here!
+    ' Do code of what you want after successful extend here!
 End If
 ```
