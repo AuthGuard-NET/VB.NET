@@ -8,7 +8,7 @@ First you'll need to get your `Secret Key`, your `App Version` and your `Variabl
 After you got the your `Secret Key`, your `App Version` and your `Variable Secret`, you can now Initialize AuthGuard and use all its features:
 
 ## Initialize
-```visualbasic
+```vb.net
 ' This connects your file to the AuthGuard.net API
 Guard.Initialize("PROGRAMSECRET", "VERSION", "VARIABLESECRET")
 ```
@@ -29,7 +29,7 @@ End If
 ```
 
 ## Login
-```visualbasic
+```vb.net
 If Guard.Login(username, password) Then
     MessageBox.Show("You have successfully logged in!", UserInfo.Username, MessageBoxButton.OK, MessageBoxImage.Information)
     ' Success login stuff goes here
@@ -45,7 +45,7 @@ End If
 * `UserInfo.Expires` : Users expiry
 
 ## Extend Subscription
-```visualbasic
+```vb.net
 If Guard.RedeemToken(username, password, token) Then
     MessageBox.Show("You have successfully extended your subscription!", GuardSettings.ProgramName, MessageBoxButton.OK, MessageBoxImage.Information)
     ' Do code of what you want after successful extend here!
