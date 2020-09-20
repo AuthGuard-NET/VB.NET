@@ -98,7 +98,7 @@ reextend:
             Dim username As String = Console.ReadLine()
             Console.WriteLine("Password:")
             Dim password As String = Console.ReadLine()
-            Console.WriteLine("AppSecret:")
+            Console.WriteLine("License:")
             Dim token As String = Console.ReadLine()
 
             If Guard.RedeemToken(username, password, token) Then
